@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>25-01 customers</title>
+
+		<style type="text/css">
+			.table{
+				border-spacing: 1px;
+				border-collapse: collapse;
+				text-align:left;
+			}
+			/*.table-bordered {
+			  border: 1px solid #4f4b4b;
+			}*/
+			.table-bordered > thead > tr > th,
+			.table-bordered > tbody > tr > th,
+			.table-bordered > tfoot > tr > th,
+			.table-bordered > thead > tr > td,
+			.table-bordered > tbody > tr > td,
+			.table-bordered > tfoot > tr > td {
+			  /*border: 1px solid #f4f4f4;*/
+			  border: 1px solid #000000;
+			}
+			.table-bordered > thead > tr > th,
+			.table-bordered > thead > tr > td {
+			  border-bottom-width: 2px;
+			}
+			/*.table-bordered > thead > tr > th:nth-child(n+4):nth-child(-n+8),
+			.table-bordered > tbody > tr > th:nth-child(n+4):nth-child(-n+8),
+			.table-bordered > tfoot > tr > th:nth-child(n+4):nth-child(-n+8),
+			.table-bordered > thead > tr > td:nth-child(n+4):nth-child(-n+8),
+			.table-bordered > tbody > tr > td:nth-child(n+4):nth-child(-n+8),
+			.table-bordered > tfoot > tr > td:nth-child(n+4):nth-child(-n+8){*/
+			.table-bordered > thead > tr > th,
+			.table-bordered > thead > tr > td,
+			.table-bordered > tbody > tr > th,
+			.table-bordered > tbody > tr > td{
+			{
+				border: 1px solid #000000;
+			}
+
+			td th{
+				display: table-cell;
+				border: 2px solid #dfdfdf;
+			}
+		</style>
+
+		
+	</head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="/dashboard/js/user.js"></script>
+	<style type="text/css" src="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"></style>	
+	<body>
+	    <H1>25:01顧客當日狀態分析,
+	     <script language="javascript">
+         var today = new Date();
+         document.write(today);
+        </script>
+        </H1>
+	    <p><b>fid</b>:&nbsp;顧客finger id,&nbsp;&nbsp;&nbsp;&nbsp;<b>AD_clicks</b>:&nbsp;點擊廣告次數,&nbsp;&nbsp;&nbsp;&nbsp;<b>buys</b>:&nbsp;曾經購買產品數,&nbsp;&nbsp;&nbsp;&nbsp;<b>Cart1~5</b>: &nbsp;近五日加入購物車次數</p>
+	    <p><b>ss.1~5</b>: 近五日觸發工作階段數,&nbsp;&nbsp;&nbsp;&nbsp;<b>T_pv1~5</b>(Time of Product View): 近五日產品觀看時間(分鐘)</p>
+	    <p><b>(Y/N:2/1)</b>: 本日實際是否購買,&nbsp;&nbsp;&nbsp;&nbsp;<b>prediction</b>: 由機械學習預測是否購買(買/不買：2/1)</p>
+	    <br>
+		<table id="user" class="display table table-bordered" cellspacing="0" width="100%">
+		<!-- <table id="user" class="hover" cellspacing="0" width="100%"> -->
+		        <thead>
+		            <tr>
+		                <th>fid</th>
+		                <!-- <th>member</th> -->
+		                <th>AD_clicks</th>
+		                <th>buys</th>
+		                <th>Cart1</th>
+		                <th>Cart2</th>
+		                <th>Cart3</th>
+		                <th>Cart4</th>
+		                <th>Cart5</th>
+		                <th>ss.1</th>
+		                <th>ss.2</th>
+		                <th>ss.3</th>
+		                <th>ss.4</th>
+		                <th>ss.5</th>
+		                <th>T_pv1</th>
+		                <th>T_pv2</th>
+		                <th>T_pv3</th>
+		                <th>T_pv4</th>
+		                <th>T_pv5</th>
+		                <th>(Y/N:2/1)</th>
+		                <th>SVC</th>
+		                <th>Kscore</th>
+		            </tr>
+		        </thead>
+		      
+		    </table>
+
+	</body>
+</html>

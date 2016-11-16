@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>25-01 dashboard</title>
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>	 -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>	 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+<body>
+<H2>&nbsp;&nbsp;25:01 Campaign-->產品銷售監控系統</H2>	
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Abel, data science department, urAD.</p>	
+<div class="row container">
+    <div class="col-md-1 col-lg-1"></div>
+	<div class="dropdown col-md-3 col-lg-3">
+	    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Campaigns,clicks
+	    <span class="caret"></span>
+	    </button>
+	    <ul class="dropdown-menu">
+	      <li><a type="full">full</a></li>
+	      <li><a type="brand">brand,375</a></li>
+	      <li><a type="uniqlo_PC">uniqlo_PC,244</a></li>
+	      <li><a type="ma1L_F">ma1L_F,184</a></li>
+	      <li><a type="competit">competit,114</a></li>
+	      <li><a type="vc3D">vc3D,103</a></li>
+	      <li><a type="F-U2L">F-U2L,103</a></li>
+	      <li><a type="vc134L">vc134L,102</a></li>	      
+	      <li><a type="10L+comp">10L+comp,91</a></li>
+	      <li><a type="ALLprod">ALLprod,84</a></li>	    
+	      <li><a type="star_PC">star_PC,77</a></li>  
+	      <li><a type="1to3Lbest">1to3Lbest,61</a></li>
+	      <li><a type="PUR3L">PUR3L,50</a></li>
+              <li><a type="M-U2L">M-U2L,44</a></li>
+	      <li><a type="page2345">page2345,42</a></li>
+              <li><a type="clo2">clo2,34</a></li>
+	      <li><a type="clickALL_F">clickALL_F,27</a></li>
+	      <li><a type="road5L">road5L,25</a></li>
+	      <li><a type="10%253L">10%253L,22</a></li>
+	      <li><a type="draw_M">draw_M,21</a></li>
+	      <li><a type="coolbrand_PC">coolbrand_PC,21</a></li>
+	      <li><a type="v75_4L">v75_4L,14</a></li>
+	      <li><a type="long_T_age18-35">long_T_age18-35,185</a></li>
+	    </ul>
+    </div>
+
+	<div class="col-md-8 col-lg-8">
+		<div id="addtocart_buy" style="min-width: 310px; height: 350px; max-width: 800px; margin: 0 auto"></div>
+		<div id="pv_addtocart" style="min-width: 310px; height: 350px; max-width: 800px; margin: 0 auto"></div>
+	</div>
+</div>
+<H4>
+
+<script type="text/javascript" src="/dashboard/js/pv_addtocart.js"></script>
+<script type="text/javascript" src="/dashboard/js/addtocart_buy.js"></script>
+<script language="javascript">
+         var today = new Date();
+         document.write(today);
+ </script>
+ </H4>
+</body>
+</html>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password:"
+AuthUserFile /home/ubuntu/.htpasswd
+Require valid-user

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>25-01 user_url</title>
+
+		<style type="text/css">
+			.table{
+				border-spacing: 5px;
+				/*border-collapse: collapse;*/
+				text-align:left;
+				word-spacing:2px;
+			}
+			/*.table-bordered {
+			  border: 1px solid #4f4b4b;
+			}*/
+			.table-bordered > thead > tr > th,
+			.table-bordered > tbody > tr > th,
+			.table-bordered > tfoot > tr > th,
+			.table-bordered > thead > tr > td,
+			.table-bordered > tbody > tr > td,
+			.table-bordered > tfoot > tr > td {
+			  /*border: 1px solid #f4f4f4;*/
+			  border: 1px solid #000000;
+			}
+			.table-bordered > thead > tr > th,
+			.table-bordered > thead > tr > td {
+			  border-bottom-width: 2px;
+			}
+			.table-bordered > thead > tr > th,
+			.table-bordered > thead > tr > td,
+			.table-bordered > tbody > tr > th,
+			.table-bordered > tbody > tr > td{
+			{
+				border: 1px solid #000000;
+			}
+
+			td th{
+				display: table-cell;
+				border: 2px solid #dfdfdf;
+			}
+			tr:nth-child(2){
+				width: 30%;
+			}
+			tr.even{
+				background-color: pink;
+			}
+		</style>
+
+		
+	</head>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<style type="text/css" src="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"></style>	
+
+	<body>
+	    <H1>25:01顧客瀏覽網頁,
+	     <script language="javascript">
+         var today = new Date();
+         document.write(today);
+        </script>
+        </H1>
+	    <p><b>fid</b>:&nbsp;顧客finger id,&nbsp;&nbsp;&nbsp;&nbsp;<b>time</b>:&nbsp;點擊網頁時間,&nbsp;&nbsp;&nbsp;&nbsp;<b>url</b>:&nbsp;網址,&nbsp;&nbsp;&nbsp;&nbsp;<b>campaign</b>: &nbsp;廣告參數</p>
+	    <p><b>event</b>: 觸發事件</p>
+	    <br>
+		<table id="userurl" class="display table table-bordered" cellspacing="0" width="100%">
+		<!-- <table id="user" class="hover" cellspacing="0" width="100%"> -->
+		        <thead>
+		            <tr>
+		           
+		                <th>fid</th>
+		                 <th>event</th>
+		                <th>time</th>
+		                <th>url</th>
+		                <th>campaign</th>
+		        	               
+		            </tr>
+		        </thead>
+		    </table>
+	</body>
+	<script type="text/javascript" src="/dashboard/js/userurl.js"></script>
+<!-- 		<script>
+	$("p:contains('time')").css("background-color","pink");
+	// $("tr:contains('ViewContent')").css("background-color","pink");
+	$("tr:even").css("background-color","pink");
+	</script> -->
+</html>
